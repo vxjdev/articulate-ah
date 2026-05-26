@@ -9,6 +9,7 @@ import socialCommunication from '../../assets/social-communication.png';
 import swallowing from '../../assets/swallowing.png';
 import fluency from '../../assets/fluency.png';
 import preschoolAndSchoolReadiness from '../../assets/preeschool-screeners-2.png';
+import alternativeCommunication from '../../assets/alternative-communication.png';
 
 const ServicesWeProvideSection: React.FC = () => (
   <section id="servicesWeProvide" className="py-10 bg-pink-100">
@@ -69,6 +70,12 @@ const ServicesWeProvideSection: React.FC = () => (
                 imageLink={preschoolAndSchoolReadiness} // Use the imported variable here
                 title='Preschool Screeners and School Readiness Programs'
                 desc='We offer early screening to identify any speech or language difficulties in young children. Our school readiness programs help prepare little ones for success in their first years of school by building essential communication and social skills.'
+            />
+            <ContentCard
+                variant='flip'
+                imageLink={alternativeCommunication} // Use the imported variable here
+                title='Augmentative and Alternative Communication'
+                desc='Supporting non-verbal and limited verbal clients through providing low and high-tech modes of communication.'
             />
           </div>
         </div>
