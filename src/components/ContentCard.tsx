@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 
 type ContentCardProps = {
@@ -18,6 +18,14 @@ export const ContentCard: React.FC<ContentCardProps> = ({
   desc, 
   variant 
 }) => {
+  // State to track flip status
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    if (variant === 'flip') {
+      setIsFlipped(!isFlipped);
+    }
+  };
 
   // --- Hover Card Logic ---
   if (variant === 'hover') {
@@ -31,7 +39,6 @@ export const ContentCard: React.FC<ContentCardProps> = ({
         `} 
       >
         {imageLink && (
-          /* Removed bg-white/50 to let rose-100 show through */
           <div className="w-full h-[192px] shrink-0 overflow-hidden flex items-center justify-center p-6">
             <img
               src={imageLink}
@@ -55,16 +62,18 @@ export const ContentCard: React.FC<ContentCardProps> = ({
   const finalImageLink = imageLink || '';
 
   return (
-    <div className={`p-0 [perspective:1000px] w-full ${className}`}>
+    <div 
+      className={`p-0 [perspective:1000px] w-full cursor-pointer ${className}`}
+      onClick={handleFlip}
+    >
       <div
         className={`
           relative w-full h-80 sm:h-96 md:h-80 lg:h-96 xl:h-80
-          group
           [transform-style:preserve-3d]
           transition-transform duration-700 ease-in-out
           rounded-lg shadow-lg
           border-4 border-pink-600
-          hover:[transform:rotateY(180deg)]
+          ${isFlipped ? '[transform:rotateY(180deg)]' : ''}
         `}
       >
         {/* Front Face */}
@@ -77,11 +86,11 @@ export const ContentCard: React.FC<ContentCardProps> = ({
             flex flex-col items-center
           `}
         >
-          <div className="absolute top-4 right-4 text-pink-500/70 group-hover:opacity-0 transition-opacity">
+          {/* Arrow icon now fades based on state rather than group-hover */}
+          <div className={`absolute top-4 right-4 text-pink-500/70 transition-opacity ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
             <ArrowPathIcon className="w-6 h-6" />
           </div>
 
-          {/* Consistent Scaling for Flip Cards */}
           <div className="w-full flex-grow flex items-center justify-center overflow-hidden py-4">
             <img
               src={finalImageLink}

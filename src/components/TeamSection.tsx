@@ -7,7 +7,7 @@ const TeamSection: React.FC = () => (
     <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
       <div className='grid lg:grid-cols-2 gap-16 items-center'>
         <div className='relative z-1 text-center'>
-          <h4 className="text-4xl font-bold mb-2">Harshini Baskaran</h4>
+          <h4 className="text-4xl font-bold mb-2">Harshini Baskaran-Elango</h4>
           <p className="mb-4 font-bold text-lg leading-relaxed">
             Director <br />
             Principal Speech Pathologist
@@ -25,7 +25,7 @@ const TeamSection: React.FC = () => (
           <div className="max-w-3xl mx-auto text-center">
             <img
               src={headshot}
-              alt="Harshini Baskaran"
+              alt="Harshini Baskaran-Elango"
               className="max-w-48 mx-auto mb-4"
             />
             <p className="mb-4 text-lg leading-relaxed">
