@@ -64,11 +64,13 @@ const PreeschoolSection: React.FC = () => (
                                         </li>
                                         ))}
                                         </ul>
-                                        <img
-                                             src={preschoolScreener1}
-                                             alt="Supervision"
-                                             className="max-w-full max-h-[350px]"
-                                        />
+                                        <div className='flex-1 max-w-3xl mx-auto flex items-center justify-center'>
+                                             <img
+                                                  src={preschoolScreener1}
+                                                  alt="Supervision"
+                                                  className="max-w-full max-h-[350px]"
+                                             />
+                                        </div>
                                    </div>
                               </div>
                          </div>
