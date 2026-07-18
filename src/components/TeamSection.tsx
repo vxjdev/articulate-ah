@@ -55,7 +55,6 @@ const TeamSection: React.FC = () => (
             Certified Practising Speech Pathologist (CPSP)
           </p>
           <p className="mb-4 text-lg leading-relaxed">
-            Meet Maddie! <br />
             Maddie is a Speech Pathologist who is passionate about supporting people of all ages to develop their communication skills, achieve their goals, and participate more confidently in everyday life.
             She holds a Master of Speech Pathology from The University of Melbourne and is committed to providing evidence-based, individualised care that is tailored to the unique needs, strengths, and goals of each client.
             Maddie also holds a Bachelor of Applied Science and Master of Podiatric Practice from La Trobe University and previously worked as a Podiatrist in private practice for four years, where she developed a strong foundation
@@ -70,12 +69,6 @@ const TeamSection: React.FC = () => (
               alt="Madeline Stockdale"
               className="w-48 h-48 object-cover rounded-full mx-auto mb-4 shadow-xl ring-4 ring-white ring-offset-4 ring-offset-pink-100 border-4 border-pink-300 transition-transform duration-300 hover:scale-105"
             />
-            <p className="text-center text-lg leading-relaxed">
-              She takes the time to understand each client’s individual goals and works collaboratively with clients, families, and support networks to develop practical and motivating
-              therapy programs that create meaningful change in everyday life. Her areas of clinical interest include speech sound disorders (articulation and phonology), language development and disorders, fluency and stuttering,
-              augmentative and alternative communication (AAC), dysphagia, and voice. Maddie is passionate about empowering clients to communicate with confidence and providing a supportive environment where they feel valued, understood,
-              and empowered to achieve their goals.
-            </p>
             <p className="mb-4 text-lg leading-relaxed">
               Outside of work, she enjoys coastal getaways with her partner, exploring Melbourne’s food scene with friends and family, and spending time outdoors with her dog. She also loves staying active through Pilates,
               running, strength training, and long walks. A fun fact about Maddie is that she represented Australia in the U17 and U21 women’s soccer teams!
